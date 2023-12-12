@@ -24,7 +24,7 @@
   	Code explanation with comments: 
    
    		function palindrome(str) {
-	 		// declare "start" and "end" indexes for the str
+		// declare "start" and "end" indexes for the str
 		let start = 0;
 		let end = str.length - 1;
 
