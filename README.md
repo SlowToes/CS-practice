@@ -140,5 +140,38 @@
 		return result.join("");
 	}
 
+### 4. Telephone Number Validator
+**Pre-requisites:**
+1. Regular Expressions
 
+**Standard libraries used:**
+1. (?:...) -> match everything enclosed
+1. \s -> any whitespace character
+1. (xyz)? -> zero or one of xyz
+1. \d -> any number
+1. a{3} -> exactly 3 of a
+1. \ -> escape sequence
+1. [abc] -> a single character of a, b or c
 
+**Intuition:**
+1. Use regex101 (link in JSlink) and slowly work it out
+
+**Approach:**
+1. Work out the sequence from left to right.
+1. Use pattern.test(stringToTest);
+
+**Code explanation with comments:**
+
+	function telephoneCheck(str) {
+		const regex = /^(1\s?)?(\(\d{3}\)|\d{3})([\s\-]?)\d{3}([\s\-]?)\d{4}$/;
+		return regex.test(str);
+	}
+
+	// (1\s?)?			optional to have 1 with a space/no space
+	// (\(\d{3}\)|\d{3})		either 3 digits w/o or 3 digits with parantheses
+	// ([\s\-]?)			optional to have either space or -
+	// \d{3}			include 3 digits
+	// ([\s\-]?)			optional to have either space or -
+	// \d{4}			include 4 digits
+
+ 
