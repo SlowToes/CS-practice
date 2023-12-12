@@ -1,5 +1,5 @@
 # Free Code Camp Guide
-## JavaScript DSA certification Projects
+## JavaScript DSA Certification Projects
 
 ### 1. Panlindrome Checker
 	Pre-requisites:
@@ -25,8 +25,8 @@
    
    		function palindrome(str) {
 	 		// declare "start" and "end" indexes for the str
-	  		let start = 0;
-    		let end = str.length - 1;
+		let start = 0;
+		let end = str.length - 1;
 
 			// stops once pointers are in the middle
     		while (start < end)
